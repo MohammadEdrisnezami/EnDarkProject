@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
 		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="css/Bootstap_style.css"/>
 
 		<!-- Font Awesome Icon -->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -31,40 +31,101 @@
 	<body>
 
 		<!-- Header -->
-		<header id="header">
-			<div class="container">
+		<header class="otherPagesNav">    
+	        <nav class="navbar navbar-expand-md">
+	            <!-- container -->
+	            <div class="container">
+	                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo"></a>
+	                <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+	                    <input type='checkbox' id='toggle-menu' />
+	                    <label type="button" class='toggle-btn' for='toggle-menu'>
+	                        <div class="bar"></div>
+	                        <div class="bar"></div>
+	                        <div class="bar"></div>
+	                    </label>
+	                </button>
+	                <div class="collapse navbar-collapse">
+	                    <!-- ms-auto -->
+	                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+	                        <li class="nav-item">
+	                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="#">ABOUT</a>
+	                        </li>
+	                        <li class="nav-item dropdown">
+	                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+	                                data-bs-toggle="dropdown" aria-expanded="false">
+	                                COURESES
+	                            </a>
+	                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	                                <li><a class="dropdown-item" href="#">Bisic</a></li>
+	                                <li><a class="dropdown-item" href="#">Intermidate</a></li>
+	                                <li>
+	                                    <hr class="dropdown-divider">
+	                                </li>
+	                                <li><a class="dropdown-item" href="#">Advance</a></li>
+	                            </ul>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="blog.html">BLOG</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="contact.html">CONTACT</a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </nav>
 
-				<div class="navbar-header">
-					<!-- Logo -->
-					<div class="navbar-brand">
-						<a class="logo" href="index.html">
-							<img src="./img/logo.png" alt="logo">
-						</a>
-					</div>
-					<!-- /Logo -->
-
-					<!-- Mobile toggle -->
-					<button class="navbar-toggle">
-						<span></span>
-					</button>
-					<!-- /Mobile toggle -->
-				</div>
-
-				<!-- Navigation -->
-				<nav id="nav">
-					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Courses</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-				<!-- /Navigation -->
-
-			</div>
-		</header>
+	        <!-- Modal -->
+	        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+	            aria-labelledby="staticBackdropLabel" aria-="true">
+	            <div class="modal-dialog">
+	                <div class="modal-content">
+	                    <div class="modal-header">
+	                        <img src="./img/logo-alt.png" alt="Logo">
+	                    </div>
+	                    <div class="modal-body">
+	                        <!-- ms-auto -->
+	                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+	                            <li class="nav-item">
+	                                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa fa-home"></i> HOME</a>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a class="nav-link" href="blog.html"><i class="fa fa-users"></i> ABOUT</a>
+	                            </li>
+	                            <li class="nav-item dropdown">
+	                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+	                                    data-bs-toggle="dropdown" aria-expanded="false">
+	                                    <i class="fa fa-reply-all"></i> COURSES
+	                                </a>
+	                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	                                    <li><a class="dropdown-item" href="#">Bisic</a></li>
+	                                    <li><a class="dropdown-item" href="#">Intermidate</a></li>
+	                                    <li>
+	                                        <hr class="dropdown-divider">
+	                                    </li>
+	                                    <li><a class="dropdown-item" href="#">Advance</a></li>
+	                                </ul>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a class="nav-link" href="blog.html"><i class="fa fa-users"></i> BLOG</a>
+	                            </li>
+	                            <li class="nav-item">
+	                                <a class="nav-link" href="contact.html"><i class="fa fa-address-book"></i> CONTACT</a>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                    <div class="modal-footer">
+	                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><label for='toggle-menu'>Close</label></button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>	
 		<!-- /Header -->
+
 
 		<!-- Hero-area -->
 		<div class="hero-area section">
@@ -75,7 +136,7 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1 text-center">
+					<div class="col-md-12 text-center">
 						<ul class="hero-area-tree">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="blog.html">Blog</a></li>

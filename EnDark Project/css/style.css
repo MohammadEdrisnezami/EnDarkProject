@@ -256,6 +256,11 @@ header .bg-image {
     }
 }
 
+.otherPagesNav {
+	height: 60px;
+	background-color: white;
+}
+
 .navbar{
 	border-bottom: 1px solid white;
     position: absolute;
@@ -271,15 +276,16 @@ header .bg-image {
     position: relative;
     color: white;
 }
+.otherPagesNav .navbar .nav-link {
+	color: #374050;
+}
 
 .navbar .navbar-brand img{
-
     max-height: 30px;
 }
 
 
 .navbar .nav-link::before {
-
     content: '';
     position: absolute;
     bottom: 2px;
@@ -423,7 +429,9 @@ header .bg-image {
 	padding-top: 80px;
 	padding-bottom: 80px;
 }
-
+.hero-area .container {
+	position: relative;
+}
 #home.hero-area {
 	height:calc(100vh - 80px);
 	padding-top: 0px;
@@ -438,6 +446,14 @@ header .bg-image {
 	        transform:translateY(-50%);
 	left:0;
 	right:0;
+}
+
+.para-space {
+	position: relative;
+	top:15vh;
+	-webkit-transform:translateY(-50%);
+	    -ms-transform:translateY(-50%);
+	        transform:translateY(-50%);
 }
 
 /* -- Breadcrumb -- */
